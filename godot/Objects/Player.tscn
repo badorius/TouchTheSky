@@ -919,7 +919,7 @@ scale = Vector2(0.5, 0.5)
 collision_layer = 2
 script = ExtResource("1_f0k0l")
 SPEED = 0
-state = "MagicMana"
+state = ""
 
 [node name="Warrior" type="Sprite2D" parent="."]
 texture = ExtResource("2_phcmd")
@@ -928,6 +928,7 @@ hframes = 12
 vframes = 11
 
 [node name="PointLight2D" type="PointLight2D" parent="Warrior"]
+visible = false
 material = SubResource("CanvasItemMaterial_tyxwt")
 position = Vector2(0, 22)
 texture = SubResource("GradientTexture2D_fwqmo")
@@ -957,6 +958,7 @@ shape = SubResource("RectangleShape2D_ybt7b")
 [node name="Area2DBody" type="Area2D" parent="Warrior"]
 collision_layer = 2
 collision_mask = 21
+monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Warrior/Area2DBody"]
 position = Vector2(0, 14)
@@ -998,6 +1000,7 @@ stream = ExtResource("5_riwm1")
 stream = ExtResource("6_10oyl")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+deterministic = false
 tree_root = SubResource("AnimationNodeStateMachine_nqriw")
 anim_player = NodePath("../AnimationPlayer")
 

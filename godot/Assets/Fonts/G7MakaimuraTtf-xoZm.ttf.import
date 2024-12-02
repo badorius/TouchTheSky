@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/G7MakaimuraTtf-xoZm.ttf-f12809390c5e6252b6fe4
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

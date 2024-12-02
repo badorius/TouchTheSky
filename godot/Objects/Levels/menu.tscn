@@ -835,6 +835,7 @@ size = Vector2i(1600, 900)
 borderless = false
 
 [node name="Popup" type="Popup" parent="."]
+transparent_bg = true
 position = Vector2i(150, 100)
 size = Vector2i(1600, 900)
 borderless = false

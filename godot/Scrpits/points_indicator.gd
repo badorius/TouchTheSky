@@ -43,4 +43,3 @@ func set_colours(ColourMode):
 		
 func goup():
 	position.y -= 0.4
-

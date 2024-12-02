@@ -579,4 +579,3 @@ func _input(event):
 
 func _on_popup_close_requested():
 	game_unpause()
-
